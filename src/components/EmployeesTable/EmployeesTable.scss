@@ -1,0 +1,11 @@
+.employees-table {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		grid-column: 1 / 3;
+	}
+}

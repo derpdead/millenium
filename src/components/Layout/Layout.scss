@@ -1,0 +1,26 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	width: calc(100% - 300px);
+
+	&__header,
+	&__footer {
+		position: sticky;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+	}
+
+	&__header {
+		top: 0;
+		background-color: red;
+	}
+
+	&__footer {
+		bottom: 0;
+		background-color: green;
+	}
+}

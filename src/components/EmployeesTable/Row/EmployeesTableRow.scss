@@ -1,0 +1,15 @@
+.employees-table-row {
+	$row: &;
+
+	display: grid;
+	grid-template-columns: max-content 100px 100px;
+	align-items: center;
+	grid-gap: 8px;
+	min-height: 32px;
+
+	&__remove-button {}
+
+	&--hovering {
+		background-color: red;
+	}
+}

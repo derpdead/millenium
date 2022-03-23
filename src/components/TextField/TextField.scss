@@ -1,0 +1,19 @@
+.text-field {
+	$field: &;
+
+	display: flex;
+
+	&__label {
+		display: flex;
+		margin-right: 8px;
+		max-width: 75px;
+		width: 100%;
+	}
+
+	&--required {
+		#{$field}__label::after {
+			content: "*";
+			color: red;
+		}
+	}
+}
